@@ -1,1 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Grooming Gear Guide | Men's Grooming Reviews</title>
+
+  <meta
+    name="description"
+    content="Grooming Gear Guide helps you compare men's grooming products, trimmers, shavers, beard care tools and grooming accessories."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #18202b;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+
+    .navbar {
+      background: #071323;
+      color: white;
+      padding: 18px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: .4px;
+    }
+
+    .logo span {
+      color: #48a9ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #dce8f5;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #55b4ff;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(4,13,26,.96) 0%,
+          rgba(5,19,37,.92) 42%,
+          rgba(5,17,32,.56) 70%,
+          rgba(4,12,24,.80) 100%
+        ),
+        url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1800&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 78% 40%, rgba(43,142,255,.23), transparent 30%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 690px;
+      padding: 85px 0;
+      color: white;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #67bcff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.04;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #53afff;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: #d4e0ec;
+      max-width: 630px;
+      margin-bottom: 32px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #1688e8;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #0877d4;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border: 1px solid #8cb7d9;
+      margin-left: 10px;
+    }
+
+    /* =========================
+       GENERAL SECTION
+    ========================== */
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-heading span {
+      color: #1688e8;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 800;
+    }
+
+    .section-heading h2 {
+      font-size: 38px;
+      margin-top: 8px;
+      color: #101c2b;
+    }
+
+    .section-heading p {
+      color: #687586;
+      max-width: 700px;
+      margin: 12px auto 0;
+    }
+
+    /* =========================
+       CAPTAIN / VIDEO SECTION
+    ========================== */
+
+    .captain-section {
+      background: #071323;
+      color: white;
+    }
+
+    .captain-section .section-heading h2 {
+      color: white;
+    }
+
+    .captain-section .section-heading p {
+      color: #b8c9da;
+    }
+
+    .captain-grid {
+      display: grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 35px;
+      align-items: center;
+    }
+
+    .video-frame {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      min-height: 470px;
+      background:
+        linear-gradient(
+          rgba(4,14,27,.18),
+          rgba(4,14,27,.40)
+        ),
+        url("a_wide_high_quality_website_homepage_screenshot.png");
+
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 20px 55px rgba(0,0,0,.38);
+      border: 1px solid rgba(99,183,255,.25);
+    }
+
+    .video-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-button {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      background: rgba(22,136,232,.94);
+      border: 3px solid white;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      padding-left: 5px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.4);
+      cursor: pointer;
+    }
+
+    .video-label {
+      position: absolute;
+      left: 22px;
+      bottom: 20px;
+      background: rgba(3,12,24,.82);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .captain-copy h3 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .captain-copy p {
+      color: #c0cfdd;
+      margin-bottom: 18px;
+    }
+
+    .captain-copy strong {
+      color: white;
+    }
+
+    /* =========================
+       FEATURED PRODUCT
+    ========================== */
+
+    .featured {
+      background: white;
+    }
+
+    .product-box {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid #e0e7ef;
+      padding: 45px;
+      border-radius: 15px;
+    }
+
+    .product-image {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #e2e8ef;
+    }
+
+    .product-image img {
+      margin: auto;
+      max-height: 480px;
+      object-fit: contain;
+    }
+
+    .product-info .label {
+      color: #1688e8;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+    }
+
+    .product-info h2 {
+      font-size: 39px;
+      line-height: 1.15;
+      margin: 8px 0 8px;
+      color: #0d1a29;
+    }
+
+    .model {
+      color: #6e7b8b;
+      margin-bottom: 22px;
+      font-weight: 600;
+    }
+
+    .product-info > p {
+      color: #586575;
+      margin-bottom: 22px;
+    }
+
+    .features {
+      list-style: none;
+      margin: 20px 0 28px;
+    }
+
+    .features li {
+      padding: 8px 0;
+      color: #263444;
+    }
+
+    .features li::before {
+      content: "✓";
+      color: #1688e8;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .amazon-button {
+      display: inline-block;
+      background: #ff9900;
+      color: #151515;
+      font-weight: 800;
+      padding: 14px 25px;
+      border-radius: 6px;
+    }
+
+    .learn-button {
+      display: inline-block;
+      border: 1px solid #1688e8;
+      color: #0874ca;
+      padding: 13px 24px;
+      border-radius: 6px;
+      margin-left: 8px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       PRODUCT HIGHLIGHTS
+    ========================== */
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .highlight {
+      background: white;
+      border: 1px solid #e2e8ef;
+      border-radius: 10px;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    .highlight .number {
+      color: #1688e8;
+      font-size: 31px;
+      font-weight: 800;
+    }
+
+    .highlight p {
+      color: #667485;
+      font-size: 14px;
+    }
+
+    /* =========================
+       CATEGORIES
+    ========================== */
+
+    .categories {
+      background: #eef3f8;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 22px;
+    }
+
+    .category-card {
+      background: white;
+      border-radius: 11px;
+      overflow: hidden;
+      box-shadow: 0 6px 25px rgba(20,40,70,.08);
+      transition: .25s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .category-content {
+      padding: 22px;
+    }
+
+    .category-content h3 {
+      margin-bottom: 7px;
+      font-size: 20px;
+    }
+
+    .category-content p {
+      color: #718091;
+      font-size: 14px;
+    }
+
+    /* =========================
+       WHY US
+    ========================== */
+
+    .why {
+      background: white;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .why-card {
+      padding: 30px;
+      border: 1px solid #e2e8ef;
+      border-radius: 10px;
+    }
+
+    .why-icon {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .why-card h3 {
+      margin-bottom: 8px;
+    }
+
+    .why-card p {
+      color: #6b7887;
+    }
+
+    /* =========================
+       DISCLOSURE
+    ========================== */
+
+    .disclosure {
+      background: #eaf4fd;
+      border-top: 1px solid #d0e5f8;
+      border-bottom: 1px solid #d0e5f8;
+    }
+
+    .disclosure-box {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .disclosure h2 {
+      margin-bottom: 12px;
+    }
+
+    .disclosure p {
+      color: #526375;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #050e1a;
+      color: #aebdcb;
+      padding: 55px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
+
+    footer h3,
+    footer h4 {
+      color: white;
+      margin-bottom: 13px;
+    }
+
+    footer a {
+      display: block;
+      color: #aebdcb;
+      margin: 7px 0;
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: #55b4ff;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 25px;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .groom-boldly {
+      color: #55b4ff;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-top: 8px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .captain-grid,
+      .product-box {
+        grid-template-columns: 1fr;
+      }
+
+      .category-grid,
+      .highlight-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .video-frame {
+        min-height: 400px;
+      }
+    }
+
+    @media (max-width: 580px) {
+
+      .hero {
+        min-height: 540px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .category-grid,
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .product-box {
+        padding: 25px;
+      }
+
+      .product-info h2 {
+        font-size: 31px;
+      }
+
+      .button.secondary,
+      .learn-button {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+
+      <a href="#" class="logo">
+        Grooming <span>Gear Guide</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#captain">Captain's Briefing</a>
+        <a href="#featured">Featured Gear</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <header class="hero" id="home">
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Men's Grooming • Reviews • Buying Guides
+        </span>
+
+        <h1>
+          Better Grooming.<br>
+          <span>Bolder You.</span>
+        </h1>
+
+        <p>
+          Discover grooming equipment designed to keep your beard,
+          hair and everyday routine looking sharp. Compare trimmers,
+          shavers and grooming accessories before you buy.
+        </p>
+
+        <a href="#featured" class="button">
+          Explore Grooming Gear
+        </a>
+
+        <a href="#captain" class="button secondary">
+          Watch Captain's Briefing
+        </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       CAPTAIN VIDEO AREA
+  ========================== -->
+
+  <section class="captain-section" id="captain">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>Captain's Briefing</span>
+
+        <h2>
+          Grooming Technology From the Bridge
+        </h2>
+
+        <p>
+          Our virtual captain takes a closer look at today's featured
+          grooming equipment.
+        </p>
+
+      </div>
+
+
+      <div class="captain-grid">
+
+        <!--
+        ======================================================
+        VIDEO AREA
+
+        RIGHT NOW:
+        This displays the captain/starship picture.
+
+        LATER:
+        When you have your actual AI MP4 video, replace this
+        entire "video-frame" DIV with:
+
+        <video controls poster="captain-poster.jpg"
+               style="width:100%; border-radius:14px;">
+          <source src="philips-captain.mp4" type="video/mp4">
+        </video>
+
+        ======================================================
+        -->
+
+        <div class="video-frame">
+
+          <div class="video-overlay">
+
+            <div class="play-button">
+              ▶
+            </div>
+
+          </div>
+
+          <div class="video-label">
+            ▶ Captain's Grooming Briefing
+          </div>
+
+        </div>
+
+
+        <div class="captain-copy">
+
+          <span class="eyebrow">
+            Featured Briefing
+          </span>
+
+          <h3>
+            Philips Norelco Multigroom 5000
+          </h3>
+
+          <p>
+            Welcome aboard. Today's featured equipment is the
+            <strong>Philips Norelco Multigroom 5000</strong>,
+            model MG5750/49.
+          </p>
+
+          <p>
+            This all-in-one grooming system is designed for face,
+            head and body grooming, combining multiple attachments
+            into one grooming kit.
+          </p>
+
+          <a href="#featured" class="button">
+            See the Equipment
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FEATURED PRODUCT
+  ========================== -->
+
+  <section class="featured" id="featured">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>Featured Grooming Gear</span>
+
+        <h2>
+          Philips Norelco Multigroom 5000
+        </h2>
+
+        <p>
+          An all-in-one grooming system designed for beard,
+          hair and body grooming.
+        </p>
+
+      </div>
+
+
+      <div class="product-box">
+
+        <div class="product-image">
+
+          <img
+            src="https://images.philips.com/is/image/philipsconsumer/fc951fbd8091414d821dae78011ee688?$png$&fit=constrain&hei=700&wid=700"
+            alt="Philips Norelco Multigroom 5000 MG5750/49 grooming kit"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <span class="label">
+            Featured Product
+          </span>
+
+          <h2>
+            Philips Norelco Multigroom 5000
+          </h2>
+
+          <div class="model">
+            Face, Head and Body • MG5750/49
+          </div>
+
+          <p>
+            One grooming system built to handle multiple parts of
+            your routine without requiring a drawer full of
+            individual grooming tools.
+          </p>
+
+          <ul class="features">
+
+            <li>
+              18-piece all-in-one grooming system
+            </li>
+
+            <li>
+              Designed for face, head and body grooming
+            </li>
+
+            <li>
+              DualCut cutting technology
+            </li>
+
+            <li>
+              Multiple trimming guards and attachments
+            </li>
+
+            <li>
+              Up to approximately 3 hours cordless runtime
+            </li>
+
+            <li>
+              No-slip rubber grip
+            </li>
+
+          </ul>
+
+
+          <!--
+          IMPORTANT:
+          When you receive your Amazon Associates affiliate link,
+          replace # below with YOUR affiliate URL.
+          -->
+
+          <a
+            href="#"
+            class="amazon-button"
+            rel="nofollow sponsored"
+          >
+            Check Availability →
+          </a>
+
+
+          <a
+            href="https://www.usa.philips.com/c-p/MG5750_49/norelco-multigroom-5000-face-head-and-body"
+            class="learn-button"
+            target="_blank"
+            rel="noopener"
+          >
+            Product Details
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="highlight-grid">
+
+        <div class="highlight">
+          <div class="number">18</div>
+          <strong>Pieces</strong>
+          <p>All-in-one grooming kit</p>
+        </div>
+
+        <div class="highlight">
+          <div class="number">3 HR</div>
+          <strong>Runtime</strong>
+          <p>Extended cordless grooming</p>
+        </div>
+
+        <div class="highlight">
+          <div class="number">DualCut</div>
+          <strong>Technology</strong>
+          <p>Designed for consistent trimming</p>
+        </div>
+
+        <div class="highlight">
+          <div class="number">3-IN-1</div>
+          <strong>Grooming</strong>
+          <p>Face • Head • Body</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CATEGORIES
+  ========================== -->
+
+  <section class="categories" id="categories">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>Explore</span>
+
+        <h2>
+          Grooming Categories
+        </h2>
+
+        <p>
+          Compare grooming equipment for every part of your routine.
+        </p>
+
+      </div>
+
+
+      <div class="category-grid">
+
+        <div class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80"
+            alt="Beard grooming"
+          >
+
+          <div class="category-content">
+            <h3>Beard Trimmers</h3>
+            <p>
+              Compare trimming systems, guards and grooming kits
+              designed for maintaining your beard.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
+            alt="Electric shaving and barber equipment"
+          >
+
+          <div class="category-content">
+            <h3>Electric Shavers</h3>
+            <p>
+              Explore electric grooming tools designed for fast
+              everyday shaving.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
+            alt="Men's shaving products"
+          >
+
+          <div class="category-content">
+            <h3>Shaving Products</h3>
+            <p>
+              Discover shaving creams and everyday products for
+              your grooming routine.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="category-card">
+
+          <img
+            src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80"
+            alt="Men's beard care"
+          >
+
+          <div class="category-content">
+            <h3>Beard Care</h3>
+            <p>
+              Grooming accessories and products designed to keep
+              facial hair looking maintained.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       WHY GROOMING GEAR GUIDE
+  ========================== -->
+
+  <section class="why" id="about">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>About Grooming Gear Guide</span>
+
+        <h2>
+          Find the Right Gear Faster
+        </h2>
+
+        <p>
+          We research grooming equipment, compare features and
+          organize the important information so you can make your
+          own buying decision.
+        </p>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+
+          <div class="why-icon">
+            🔍
+          </div>
+
+          <h3>
+            Product Research
+          </h3>
+
+          <p>
+            We organize specifications and important product
+            information in one convenient place.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <div class="why-icon">
+            ⚖️
+          </div>
+
+          <h3>
+            Practical Comparisons
+          </h3>
+
+          <p>
+            Compare grooming products by features, intended use
+            and everyday convenience.
+          </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+          <div class="why-icon">
+            ✂️
+          </div>
+
+          <h3>
+            Better Grooming Choices
+          </h3>
+
+          <p>
+            Find equipment that fits your grooming routine,
+            preferences and budget.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       AFFILIATE DISCLOSURE
+  ========================== -->
+
+  <section class="disclosure">
+
+    <div class="container">
+
+      <div class="disclosure-box">
+
+        <h2>
+          Affiliate Disclosure
+        </h2>
+
+        <p>
+          Some links on Grooming Gear Guide may eventually be
+          affiliate links. If you purchase a product through one
+          of these links, Grooming Gear Guide may receive a
+          commission at no additional cost to you. Affiliate
+          relationships do not change the price you pay.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <h3>
+            Grooming Gear Guide
+          </h3>
+
+          <p>
+            Men's grooming equipment reviews, comparisons and
+            practical buying information.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Grooming Gear
+          </h4>
+
+          <a href="#featured">
+            Featured Product
+          </a>
+
+          <a href="#categories">
+            Beard Trimmers
+          </a>
+
+          <a href="#categories">
+            Electric Shavers
+          </a>
+
+          <a href="#categories">
+            Beard Care
+          </a>
+
+        </div>
+
+
+        <div>
+
+          <h4>
+            Information
+          </h4>
+
+          <a href="#about">
+            About Us
+          </a>
+
+          <a href="#captain">
+            Captain's Briefing
+          </a>
+
+          <a href="#">
+            Privacy Policy
+          </a>
+
+          <a href="#">
+            Affiliate Disclosure
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        © 2026 Grooming Gear Guide.
+        All rights reserved.
+
+        <div class="groom-boldly">
+          GROOM BOLDLY.
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
