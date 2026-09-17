@@ -6,7 +6,7 @@
 
 <title>Grooming Gear Guide | Men's Grooming Reviews & Buying Guides</title>
 
-<meta name="description" content="Independent men's grooming reviews, comparisons and buying guides for beard trimmers, electric shavers, shaving products and beard care tools.">
+<meta name="description" content="Men's grooming reviews, recommendations and buying guides for beard trimmers, electric shavers, shaving products and beard care tools.">
 
 <style>
 
@@ -108,7 +108,7 @@ nav a:hover {
     background: #1d4ed8;
 }
 
-/* SECTION TITLES */
+/* TITLES */
 
 .section-title {
     text-align: center;
@@ -137,7 +137,7 @@ nav a:hover {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 22px rgba(0,0,0,.09);
-    transition: .25s;
+    transition: transform .25s, box-shadow .25s;
 }
 
 .card:hover {
@@ -173,15 +173,15 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* FEATURED SECTION */
+/* FEATURED PRODUCT */
 
 .featured-background {
     background: #e8eef5;
-    padding: 75px 20px;
+    padding: 80px 20px;
 }
 
 .featured {
-    max-width: 1050px;
+    max-width: 1080px;
     margin: auto;
     background: white;
     border-radius: 18px;
@@ -191,24 +191,30 @@ nav a:hover {
     box-shadow: 0 8px 30px rgba(0,0,0,.10);
 }
 
+/* REAL PHILIPS PRODUCT IMAGE AREA */
+
 .featured-picture {
-    min-height: 480px;
-    background:
-        linear-gradient(rgba(17,24,39,.08), rgba(17,24,39,.08)),
-        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85");
-    background-size: cover;
-    background-position: center;
+    background: #ffffff;
+    padding: 45px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.photo-label {
-    background: rgba(17,24,39,.88);
-    color: white;
-    margin: 25px;
-    padding: 10px 14px;
-    border-radius: 6px;
+.featured-picture img {
+    width: 100%;
+    max-width: 470px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.image-caption {
+    margin-top: 18px;
     font-size: 13px;
+    color: #6b7280;
+    text-align: center;
 }
 
 .featured-content {
@@ -229,23 +235,29 @@ nav a:hover {
 .featured h2 {
     font-size: 35px;
     line-height: 1.2;
-    margin: 10px 0 20px;
+    margin: 10px 0 5px;
+}
+
+.model-number {
+    color: #6b7280;
+    font-weight: bold;
+    margin: 0 0 20px;
 }
 
 .featured p {
-    color: #6b7280;
+    color: #5b6472;
 }
 
 .featured ul {
     padding-left: 20px;
-    margin: 10px 0 28px;
+    margin: 12px 0 28px;
 }
 
 .featured li {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
-.review-button {
+.product-button {
     display: inline-block;
     width: fit-content;
     background: #2563eb;
@@ -256,39 +268,59 @@ nav a:hover {
     font-weight: bold;
 }
 
-.review-button:hover {
+.product-button:hover {
     background: #1d4ed8;
 }
 
-/* WHY US */
+.official-link {
+    display: inline-block;
+    margin-top: 16px;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-.why-grid {
+.official-link:hover {
+    text-decoration: underline;
+}
+
+/* PRODUCT FEATURES */
+
+.features-section {
+    background: white;
+}
+
+.features-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     margin-top: 40px;
 }
 
-.why-box {
-    background: white;
-    padding: 30px;
+.feature-box {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
     border-radius: 12px;
+    padding: 28px 22px;
     text-align: center;
-    box-shadow: 0 4px 18px rgba(0,0,0,.06);
 }
 
-.why-icon {
-    font-size: 34px;
-    margin-bottom: 10px;
+.feature-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 5px;
 }
 
-.why-box h3 {
+.feature-box h3 {
     margin: 5px 0 10px;
 }
 
-.why-box p {
+.feature-box p {
     color: #6b7280;
-    font-size: 15px;
+    font-size: 14px;
+    margin: 0;
 }
 
 /* ABOUT */
@@ -357,8 +389,8 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .why-grid {
-        grid-template-columns: 1fr;
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -391,6 +423,14 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-picture {
+        padding: 30px 20px;
+    }
+
     .featured-content {
         padding: 35px 25px;
     }
@@ -404,7 +444,9 @@ footer a:hover {
 </style>
 </head>
 
+
 <body>
+
 
 <!-- HEADER -->
 
@@ -418,7 +460,7 @@ Grooming Gear Guide
 
 <nav>
 <a href="#categories">Grooming Gear</a>
-<a href="#featured">Featured Guide</a>
+<a href="#featured">Featured Pick</a>
 <a href="#about">About</a>
 </nav>
 
@@ -438,13 +480,13 @@ Better Grooming Starts With Better Gear
 </h1>
 
 <p>
-Independent reviews, comparisons and buying guides for men's
-trimmers, electric shavers, shaving products, beard care tools
-and everyday grooming accessories.
+Independent men's grooming reviews, comparisons and buying
+guides for beard trimmers, electric shavers, shaving products,
+beard care tools and everyday grooming accessories.
 </p>
 
-<a href="#categories" class="main-button">
-Explore Grooming Gear
+<a href="#featured" class="main-button">
+See Our Featured Grooming Pick
 </a>
 
 </div>
@@ -452,7 +494,7 @@ Explore Grooming Gear
 </section>
 
 
-<!-- CATEGORIES -->
+<!-- POPULAR CATEGORIES -->
 
 <section class="container" id="categories">
 
@@ -461,9 +503,10 @@ Popular Grooming Categories
 </h2>
 
 <p class="section-intro">
-Compare grooming products and learn what features to look for
-before choosing gear for your routine and budget.
+Compare grooming products and find gear designed for
+your grooming routine, preferences and budget.
 </p>
+
 
 <div class="category-grid">
 
@@ -474,7 +517,7 @@ before choosing gear for your routine and budget.
 
 <img
 src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80"
-alt="Beard trimmer and men's grooming equipment"
+alt="Men's beard trimmer and grooming tools"
 >
 
 <div class="card-body">
@@ -482,12 +525,12 @@ alt="Beard trimmer and men's grooming equipment"
 <h3>Beard Trimmers</h3>
 
 <p>
-Compare beard trimmers for everyday trimming, shaping,
-detailing and beard maintenance.
+Compare beard trimmers for trimming, shaping,
+detailing and everyday beard maintenance.
 </p>
 
 <a href="#featured">
-Explore Beard Trimmers →
+View Beard Trimmers →
 </a>
 
 </div>
@@ -501,7 +544,7 @@ Explore Beard Trimmers →
 
 <img
 src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-alt="Men's electric shaving and grooming"
+alt="Men's shaving and grooming"
 >
 
 <div class="card-body">
@@ -509,12 +552,12 @@ alt="Men's electric shaving and grooming"
 <h3>Electric Shavers</h3>
 
 <p>
-Learn about electric shavers designed for convenient
-daily shaving and facial-hair maintenance.
+Explore electric shaving equipment designed for
+convenient everyday facial grooming.
 </p>
 
 <a href="#about">
-Explore Electric Shavers →
+View Electric Shavers →
 </a>
 
 </div>
@@ -528,7 +571,7 @@ Explore Electric Shavers →
 
 <img
 src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
-alt="Men's shaving and grooming products"
+alt="Men's shaving products"
 >
 
 <div class="card-body">
@@ -536,12 +579,12 @@ alt="Men's shaving and grooming products"
 <h3>Shaving Products</h3>
 
 <p>
-Explore shaving creams, gels and other products designed
-to improve glide and make shaving more comfortable.
+Discover shaving creams, gels and other products
+for your everyday shaving routine.
 </p>
 
 <a href="#about">
-Explore Shaving Products →
+View Shaving Products →
 </a>
 
 </div>
@@ -563,12 +606,12 @@ alt="Men's beard care and grooming"
 <h3>Beard Care</h3>
 
 <p>
-Learn about beard oils, balms, brushes, combs and
-other tools for maintaining facial hair.
+Explore beard oils, balms, brushes, combs and
+other facial-hair grooming tools.
 </p>
 
 <a href="#about">
-Explore Beard Care →
+View Beard Care →
 </a>
 
 </div>
@@ -581,61 +624,115 @@ Explore Beard Care →
 </section>
 
 
-<!-- FEATURED GUIDE -->
+<!-- FEATURED PRODUCT -->
 
 <section class="featured-background" id="featured">
 
 <div class="featured">
 
 
+<!-- ACTUAL PHILIPS MG5750/49 PRODUCT IMAGE -->
+
 <div class="featured-picture">
 
-<div class="photo-label">
-Men's grooming equipment
+<img
+src="https://images.philips.com/is/image/philipsconsumer/fc951fbd8091414d821dae78011ee688?$png$&fit=constrain&hei=700&wid=700"
+alt="Philips Norelco Multigroom 5000 Face Head and Body MG5750/49 with grooming attachments"
+>
+
+<div class="image-caption">
+Philips Norelco Multigroom 5000 — MG5750/49
 </div>
 
 </div>
 
+
+<!-- PRODUCT INFORMATION -->
 
 <div class="featured-content">
 
 <div class="featured-label">
-Featured Buying Guide
+Featured Grooming Pick
 </div>
 
 <h2>
-Philips Norelco Multigroom Trimmers
+Philips Norelco Multigroom 5000
 </h2>
 
+<div class="model-number">
+Face, Head and Body — MG5750/49
+</div>
+
 <p>
-Philips Norelco offers Multigroom trimmers designed to handle
-multiple grooming jobs with one rechargeable device.
+The Philips Norelco Multigroom 5000 MG5750/49 is an
+all-in-one grooming system designed for trimming and
+styling the face, head and body.
 </p>
 
 <p>
-Depending on the model, Multigroom systems can include
-attachments for beard trimming, facial-hair detailing,
-hair trimming and body grooming.
-</p>
-
-<p>
-Our upcoming buying guide will compare Multigroom models,
-included attachments, trimming options and other features
-to consider before buying.
+The system includes 18 grooming pieces and uses Philips
+DualCut blade technology. Its interchangeable tools and
+guards allow one rechargeable trimmer to handle several
+different grooming jobs.
 </p>
 
 <ul>
 
-<li>Beard and facial-hair grooming</li>
-<li>Multiple trimming attachments</li>
-<li>Rechargeable cordless designs</li>
-<li>Different models for different grooming needs</li>
-<li>All-in-one grooming options</li>
+<li><strong>18-piece</strong> all-in-one grooming system</li>
+
+<li><strong>DualCut</strong> blade technology</li>
+
+<li>Face, head and body grooming</li>
+
+<li>Beard and stubble trimming guards</li>
+
+<li>Hair trimming guards</li>
+
+<li>Body trimming guards</li>
+
+<li>Nose and ear trimmer attachment</li>
+
+<li>Detail metal trimmer</li>
+
+<li>Extra-wide hair trimmer</li>
+
+<li>Up to <strong>3 hours of cordless runtime</strong></li>
+
+<li>No-slip rubber grip</li>
 
 </ul>
 
-<a href="#about" class="review-button">
-Learn About Our Reviews →
+
+<!--
+WHEN YOU RECEIVE YOUR AMAZON ASSOCIATES LINK:
+
+Replace the # below with YOUR Amazon affiliate URL.
+
+Example:
+
+href="YOUR-AMAZON-AFFILIATE-LINK"
+
+Do NOT put somebody else's affiliate link here.
+-->
+
+<a
+href="#"
+class="product-button"
+rel="nofollow sponsored"
+>
+Check Availability →
+</a>
+
+
+<!-- OFFICIAL MANUFACTURER PAGE -->
+
+<a
+href="https://www.usa.philips.com/c-p/MG5750_49/norelco-multigroom-5000-face-head-and-body"
+class="official-link"
+target="_blank"
+rel="noopener"
+>
+View Product Information at Philips →
 </a>
 
 </div>
@@ -645,61 +742,86 @@ Learn About Our Reviews →
 </section>
 
 
-<!-- WHY GROOMING GEAR GUIDE -->
+<!-- PRODUCT HIGHLIGHTS -->
 
-<section class="container">
+<section class="container features-section">
 
 <h2 class="section-title">
-How We Approach Grooming Gear
+Philips Norelco Multigroom 5000 Highlights
 </h2>
 
 <p class="section-intro">
-Our buying guides focus on practical product information
-that can help readers compare their options.
+A quick look at some of the main specifications of
+the MG5750/49 grooming system.
 </p>
 
-<div class="why-grid">
 
-<div class="why-box">
+<div class="features-grid">
 
-<div class="why-icon">✂️</div>
 
-<h3>Product Comparisons</h3>
+<div class="feature-box">
+
+<div class="feature-number">
+18
+</div>
+
+<h3>Grooming Pieces</h3>
 
 <p>
-We compare grooming products and the features that
-differentiate them.
+A collection of attachments and guards for
+face, head and body grooming.
 </p>
 
 </div>
 
 
-<div class="why-box">
+<div class="feature-box">
 
-<div class="why-icon">🔎</div>
+<div class="feature-number">
+3 HR
+</div>
 
-<h3>Practical Research</h3>
+<h3>Runtime</h3>
 
 <p>
-We look at specifications, intended uses and other
-information shoppers may want to consider.
+Up to three hours of cordless use from
+the rechargeable battery.
 </p>
 
 </div>
 
 
-<div class="why-box">
+<div class="feature-box">
 
-<div class="why-icon">💈</div>
+<div class="feature-number">
+2X
+</div>
 
-<h3>Grooming Guides</h3>
+<h3>DualCut Blades</h3>
 
 <p>
-Our guides are designed to make choosing everyday
-grooming equipment easier to understand.
+Philips DualCut technology uses a dual-blade
+cutting system designed for precision.
 </p>
 
 </div>
+
+
+<div class="feature-box">
+
+<div class="feature-number">
+3-IN-1
+</div>
+
+<h3>Face, Head & Body</h3>
+
+<p>
+One grooming system designed to cover
+multiple areas and grooming jobs.
+</p>
+
+</div>
+
 
 </div>
 
@@ -719,11 +841,12 @@ About Grooming Gear Guide
 <p>
 Grooming Gear Guide is an independent men's grooming
 information website. We research grooming products,
-compare features and publish practical buying guides.
+compare specifications and features, and publish
+practical buying guides.
 </p>
 
 <p>
-Our goal is to help readers quickly compare products
+Our goal is to help readers understand their options
 and find grooming gear that fits their routine,
 preferences and budget.
 </p>
@@ -772,6 +895,7 @@ Men's Grooming Reviews, Comparisons & Buying Guides
 </p>
 
 </footer>
+
 
 </body>
 </html>
