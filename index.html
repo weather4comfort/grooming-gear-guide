@@ -4,15 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Grooming Gear Guide | Men's Grooming Reviews</title>
+<title>Grooming Gear Guide | Men's Grooming Reviews & Buying Guides</title>
 
-<meta name="description" content="Men's grooming reviews, recommendations and buying guides for beard trimmers, electric shavers, shaving creams and beard care products.">
+<meta name="description" content="Independent men's grooming reviews, comparisons and buying guides for beard trimmers, electric shavers, shaving products and beard care tools.">
 
 <style>
-
-/* ==============================
-   BASIC WEBSITE SETTINGS
-================================ */
 
 * {
     box-sizing: border-box;
@@ -33,13 +29,10 @@ body {
 .container {
     max-width: 1150px;
     margin: auto;
-    padding: 65px 20px;
+    padding: 70px 20px;
 }
 
-
-/* ==============================
-   HEADER
-================================ */
+/* HEADER */
 
 header {
     background: #111827;
@@ -67,16 +60,14 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
     font-weight: 600;
+    font-size: 15px;
 }
 
 nav a:hover {
     color: #60a5fa;
 }
 
-
-/* ==============================
-   HERO
-================================ */
+/* HERO */
 
 .hero {
     background: linear-gradient(135deg, #111827, #263449);
@@ -117,10 +108,7 @@ nav a:hover {
     background: #1d4ed8;
 }
 
-
-/* ==============================
-   TITLES
-================================ */
+/* SECTION TITLES */
 
 .section-title {
     text-align: center;
@@ -136,10 +124,7 @@ nav a:hover {
     font-size: 17px;
 }
 
-
-/* ==============================
-   CATEGORY CARDS
-================================ */
+/* CATEGORY CARDS */
 
 .category-grid {
     display: grid;
@@ -188,13 +173,10 @@ nav a:hover {
     font-weight: bold;
 }
 
-
-/* ==============================
-   FEATURED PRODUCT
-================================ */
+/* FEATURED SECTION */
 
 .featured-background {
-    background: #e9eef5;
+    background: #e8eef5;
     padding: 75px 20px;
 }
 
@@ -210,18 +192,23 @@ nav a:hover {
 }
 
 .featured-picture {
-    background: #f8fafc;
+    min-height: 480px;
+    background:
+        linear-gradient(rgba(17,24,39,.08), rgba(17,24,39,.08)),
+        url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1000&q=85");
+    background-size: cover;
+    background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
+    align-items: flex-end;
 }
 
-.featured-picture img {
-    width: 100%;
-    max-width: 450px;
-    height: 430px;
-    object-fit: contain;
+.photo-label {
+    background: rgba(17,24,39,.88);
+    color: white;
+    margin: 25px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 13px;
 }
 
 .featured-content {
@@ -240,7 +227,7 @@ nav a:hover {
 }
 
 .featured h2 {
-    font-size: 36px;
+    font-size: 35px;
     line-height: 1.2;
     margin: 10px 0 20px;
 }
@@ -251,14 +238,14 @@ nav a:hover {
 
 .featured ul {
     padding-left: 20px;
-    margin-bottom: 30px;
+    margin: 10px 0 28px;
 }
 
 .featured li {
     margin-bottom: 8px;
 }
 
-.price-button {
+.review-button {
     display: inline-block;
     width: fit-content;
     background: #2563eb;
@@ -269,14 +256,42 @@ nav a:hover {
     font-weight: bold;
 }
 
-.price-button:hover {
+.review-button:hover {
     background: #1d4ed8;
 }
 
+/* WHY US */
 
-/* ==============================
-   ABOUT
-================================ */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.why-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,.06);
+}
+
+.why-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.why-box h3 {
+    margin: 5px 0 10px;
+}
+
+.why-box p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* ABOUT */
 
 .about {
     max-width: 850px;
@@ -293,10 +308,7 @@ nav a:hover {
     font-size: 17px;
 }
 
-
-/* ==============================
-   AFFILIATE DISCLOSURE
-================================ */
+/* DISCLOSURE */
 
 .disclosure {
     max-width: 850px;
@@ -306,18 +318,16 @@ nav a:hover {
     border-radius: 7px;
     padding: 22px 25px;
     color: #4b5563;
+    font-size: 14px;
 }
 
-
-/* ==============================
-   FOOTER
-================================ */
+/* FOOTER */
 
 footer {
     background: #111827;
     color: #9ca3af;
     text-align: center;
-    padding: 40px 20px;
+    padding: 42px 20px;
 }
 
 footer strong {
@@ -331,10 +341,11 @@ footer a {
     margin: 0 8px;
 }
 
+footer a:hover {
+    color: white;
+}
 
-/* ==============================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media(max-width: 900px) {
 
@@ -345,6 +356,11 @@ footer a {
     .featured {
         grid-template-columns: 1fr;
     }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media(max-width: 600px) {
@@ -355,7 +371,7 @@ footer a {
     }
 
     nav a {
-        margin: 0 8px;
+        margin: 0 7px;
         font-size: 14px;
     }
 
@@ -380,21 +396,17 @@ footer a {
     }
 
     .featured h2 {
-        font-size: 30px;
+        font-size: 29px;
     }
+
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ==============================
-     HEADER
-================================ -->
+<!-- HEADER -->
 
 <header>
 
@@ -406,7 +418,7 @@ Grooming Gear Guide
 
 <nav>
 <a href="#categories">Grooming Gear</a>
-<a href="#featured">Featured Pick</a>
+<a href="#featured">Featured Guide</a>
 <a href="#about">About</a>
 </nav>
 
@@ -415,10 +427,7 @@ Grooming Gear Guide
 </header>
 
 
-
-<!-- ==============================
-     HERO
-================================ -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -429,9 +438,9 @@ Better Grooming Starts With Better Gear
 </h1>
 
 <p>
-We review men's grooming products including electric trimmers,
-shaving products, beard care tools, razors and everyday grooming
-accessories.
+Independent reviews, comparisons and buying guides for men's
+trimmers, electric shavers, shaving products, beard care tools
+and everyday grooming accessories.
 </p>
 
 <a href="#categories" class="main-button">
@@ -443,10 +452,7 @@ Explore Grooming Gear
 </section>
 
 
-
-<!-- ==============================
-     POPULAR CATEGORIES
-================================ -->
+<!-- CATEGORIES -->
 
 <section class="container" id="categories">
 
@@ -455,21 +461,20 @@ Popular Grooming Categories
 </h2>
 
 <p class="section-intro">
-Quickly compare grooming products and find gear that fits
-your routine, grooming style and budget.
+Compare grooming products and learn what features to look for
+before choosing gear for your routine and budget.
 </p>
-
 
 <div class="category-grid">
 
 
 <!-- BEARD TRIMMERS -->
 
-<div class="card">
+<article class="card">
 
 <img
 src="https://images.unsplash.com/photo-1621607512214-68297480165e?auto=format&fit=crop&w=800&q=80"
-alt="Beard trimming and men's grooming"
+alt="Beard trimmer and men's grooming equipment"
 >
 
 <div class="card-body">
@@ -477,27 +482,26 @@ alt="Beard trimming and men's grooming"
 <h3>Beard Trimmers</h3>
 
 <p>
-Compare popular beard trimmers for trimming, shaping,
-detailing and everyday grooming.
+Compare beard trimmers for everyday trimming, shaping,
+detailing and beard maintenance.
 </p>
 
-<a href="#">
-View Beard Trimmers →
+<a href="#featured">
+Explore Beard Trimmers →
 </a>
 
 </div>
 
-</div>
-
+</article>
 
 
 <!-- ELECTRIC SHAVERS -->
 
-<div class="card">
+<article class="card">
 
 <img
 src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80"
-alt="Men's shaving and grooming"
+alt="Men's electric shaving and grooming"
 >
 
 <div class="card-body">
@@ -505,55 +509,53 @@ alt="Men's shaving and grooming"
 <h3>Electric Shavers</h3>
 
 <p>
-Explore electric shavers designed for comfortable,
-convenient everyday shaving.
+Learn about electric shavers designed for convenient
+daily shaving and facial-hair maintenance.
 </p>
 
-<a href="#">
-View Electric Shavers →
+<a href="#about">
+Explore Electric Shavers →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
+<!-- SHAVING PRODUCTS -->
 
-<!-- SHAVING CREAM -->
-
-<div class="card">
+<article class="card">
 
 <img
 src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80"
-alt="Men shaving and shaving products"
+alt="Men's shaving and grooming products"
 >
 
 <div class="card-body">
 
-<h3>Shaving Creams</h3>
+<h3>Shaving Products</h3>
 
 <p>
-Discover shaving creams and gels designed to improve
-razor glide and help reduce irritation.
+Explore shaving creams, gels and other products designed
+to improve glide and make shaving more comfortable.
 </p>
 
-<a href="#">
-View Shaving Products →
+<a href="#about">
+Explore Shaving Products →
 </a>
 
 </div>
 
-</div>
-
+</article>
 
 
 <!-- BEARD CARE -->
 
-<div class="card">
+<article class="card">
 
 <img
 src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80"
-alt="Beard care and men's grooming"
+alt="Men's beard care and grooming"
 >
 
 <div class="card-body">
@@ -561,17 +563,17 @@ alt="Beard care and men's grooming"
 <h3>Beard Care</h3>
 
 <p>
-Reviews and recommendations for beard oils, balms,
-brushes, combs and complete grooming kits.
+Learn about beard oils, balms, brushes, combs and
+other tools for maintaining facial hair.
 </p>
 
-<a href="#">
-View Beard Care →
+<a href="#about">
+Explore Beard Care →
 </a>
 
 </div>
 
-</div>
+</article>
 
 
 </div>
@@ -579,23 +581,18 @@ View Beard Care →
 </section>
 
 
-
-<!-- ==============================
-     FEATURED PRODUCT
-================================ -->
+<!-- FEATURED GUIDE -->
 
 <section class="featured-background" id="featured">
-
 
 <div class="featured">
 
 
 <div class="featured-picture">
 
-<img
-src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85"
-alt="Men's beard trimmer and grooming equipment"
->
+<div class="photo-label">
+Men's grooming equipment
+</div>
 
 </div>
 
@@ -603,55 +600,43 @@ alt="Men's beard trimmer and grooming equipment"
 <div class="featured-content">
 
 <div class="featured-label">
-Featured Grooming Pick
+Featured Buying Guide
 </div>
 
 <h2>
-Philips Norelco Multi-Groom Trimmer
+Philips Norelco Multigroom Trimmers
 </h2>
 
 <p>
-Multi-purpose grooming tools are popular because one device
-can handle beard trimming, detailing, hair trimming and other
-everyday grooming tasks.
+Philips Norelco offers Multigroom trimmers designed to handle
+multiple grooming jobs with one rechargeable device.
 </p>
 
 <p>
-The Philips Norelco Multigroom family offers versatile grooming
-options for men who prefer one device for several grooming jobs.
+Depending on the model, Multigroom systems can include
+attachments for beard trimming, facial-hair detailing,
+hair trimming and body grooming.
 </p>
 
+<p>
+Our upcoming buying guide will compare Multigroom models,
+included attachments, trimming options and other features
+to consider before buying.
+</p>
 
 <ul>
 
-<li>Multi-purpose grooming design</li>
-
-<li>Beard and facial-hair trimming</li>
-
-<li>Hair trimming capabilities</li>
-
-<li>Multiple grooming attachments</li>
-
-<li>Rechargeable cordless operation</li>
+<li>Beard and facial-hair grooming</li>
+<li>Multiple trimming attachments</li>
+<li>Rechargeable cordless designs</li>
+<li>Different models for different grooming needs</li>
+<li>All-in-one grooming options</li>
 
 </ul>
 
-
-<!--
-IMPORTANT:
-Replace the # below with your affiliate link
-when you join Amazon, Walmart, Philips,
-or another affiliate program.
--->
-
-<a
-href="#"
-class="price-button"
-rel="nofollow sponsored"
->
-Check Price →
+<a href="#about" class="review-button">
+Learn About Our Reviews →
 </a>
-
 
 </div>
 
@@ -660,10 +645,68 @@ Check Price →
 </section>
 
 
+<!-- WHY GROOMING GEAR GUIDE -->
 
-<!-- ==============================
-     ABOUT
-================================ -->
+<section class="container">
+
+<h2 class="section-title">
+How We Approach Grooming Gear
+</h2>
+
+<p class="section-intro">
+Our buying guides focus on practical product information
+that can help readers compare their options.
+</p>
+
+<div class="why-grid">
+
+<div class="why-box">
+
+<div class="why-icon">✂️</div>
+
+<h3>Product Comparisons</h3>
+
+<p>
+We compare grooming products and the features that
+differentiate them.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">🔎</div>
+
+<h3>Practical Research</h3>
+
+<p>
+We look at specifications, intended uses and other
+information shoppers may want to consider.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<div class="why-icon">💈</div>
+
+<h3>Grooming Guides</h3>
+
+<p>
+Our guides are designed to make choosing everyday
+grooming equipment easier to understand.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
 
 <section class="container" id="about">
 
@@ -675,26 +718,26 @@ About Grooming Gear Guide
 
 <p>
 Grooming Gear Guide is an independent men's grooming
-information website. We research products, compare features,
-and publish practical buying guides.
+information website. We research grooming products,
+compare features and publish practical buying guides.
 </p>
 
 <p>
-Our goal is simple: help you quickly compare products
-and find grooming gear that fits your routine and budget.
+Our goal is to help readers quickly compare products
+and find grooming gear that fits their routine,
+preferences and budget.
 </p>
 
 </div>
-
 
 
 <div class="disclosure">
 
 <strong>Affiliate Disclosure:</strong>
 
-Some links on this site may be affiliate links.
-If you purchase through an affiliate link,
-Grooming Gear Guide may earn a commission
+Grooming Gear Guide may participate in affiliate programs.
+Some links on this website may be affiliate links. If you
+purchase through an affiliate link, we may earn a commission
 at no additional cost to you.
 
 </div>
@@ -702,10 +745,7 @@ at no additional cost to you.
 </section>
 
 
-
-<!-- ==============================
-     FOOTER
-================================ -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -714,10 +754,12 @@ at no additional cost to you.
 </p>
 
 <p>
-Men's Grooming Reviews, Recommendations & Buying Guides
+Men's Grooming Reviews, Comparisons & Buying Guides
 </p>
 
 <p>
+<a href="#about">About</a>
+|
 <a href="#">Privacy Policy</a>
 |
 <a href="#">Affiliate Disclosure</a>
@@ -730,7 +772,6 @@ Men's Grooming Reviews, Recommendations & Buying Guides
 </p>
 
 </footer>
-
 
 </body>
 </html>
